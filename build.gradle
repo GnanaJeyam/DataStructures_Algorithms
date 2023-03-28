@@ -1,0 +1,12 @@
+
+plugins {
+    id 'java'
+}
+
+group = 'com.jeyam.dsalgo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
