@@ -10,7 +10,7 @@ package com.jeyam.dsalgo.Leetcode;
  * Output: False
  * https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/549/week-1-august-1st-august-7th/3409/
  */
-class Solution {
+class DetectCapital {
     public boolean detectCapitalUse(String word) {
         return word.matches("[A-Z]*|[A-Z]?[a-z]*");
     }

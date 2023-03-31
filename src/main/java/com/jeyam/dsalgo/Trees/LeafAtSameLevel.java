@@ -4,8 +4,8 @@ package com.jeyam.dsalgo.Trees;
  * This is the functional problem to check the leafs in the binary tree are at same level.
  * https://practice.geeksforgeeks.org/problems/leaf-at-same-level/1
  */
-class GfG
-{
+import java.util.*;
+class GfG {
     boolean check(Node root)
     {
         

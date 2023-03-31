@@ -4,7 +4,7 @@ package com.jeyam.dsalgo.Trees;
  * This is function problem to find the Extreme nodes in alternate order in binary tree.
  * https://practice.geeksforgeeks.org/problems/extreme-nodes-in-alternate-order/1
  */
-
+import java.util.*;
 class ExtremeNodesInAlternateOrder {
     public  ArrayList<Integer> ExtremeNode(Node node)
       {
