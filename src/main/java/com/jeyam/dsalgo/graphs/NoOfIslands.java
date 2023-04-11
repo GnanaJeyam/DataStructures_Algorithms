@@ -19,10 +19,10 @@ public class NoOfIslands {
 
     public static void main(String[] args) {
         int islands [][] = {
-            {0, 1, 1, 0},
-            {0, 0, 0, 1},
-            {0, 0, 0, 0},
-            {1, 0, 1, 1},
+                {0, 1, 1, 0},
+                {0, 0, 0, 1},
+                {0, 0, 0, 0},
+                {1, 0, 1, 1},
         };
         boolean visited [][] = new boolean[islands.length][islands[0].length];
 
@@ -30,20 +30,20 @@ public class NoOfIslands {
     }
 
     static void printTotalIslands(int islands [][], boolean visited [][]) {
-       int totalIslands = 0;
-       int rows = islands.length;
-       int cols = islands[0].length;
+        int totalIslands = 0;
+        int rows = islands.length;
+        int cols = islands[0].length;
 
-       for (int i=0; i<4; i++) {
+        for (int i=0; i<4; i++) {
             for (int j=0; j<4; j++) {
                 if (islands[i][j] == 1 && !visited[i][j]) {
                     bfs(i, j, islands, visited, rows, cols);
                     totalIslands++;
                 }
             }
-       }
+        }
 
-       System.out.print("Total Islands are : " + totalIslands);
+        System.out.print("Total Islands are : " + totalIslands);
     }
 
     static void bfs(int row,
@@ -74,23 +74,6 @@ public class NoOfIslands {
                 }
             }
 
-        }
-    }
-
-    private static class Pair{
-        private int r;
-        private int c;
-
-        public Pair(int r, int c) {
-            this.r = r;
-            this.c = c;
-        }
-
-        public int getC() {
-            return c;
-        }
-        public int getR() {
-            return r;
         }
     }
 }
