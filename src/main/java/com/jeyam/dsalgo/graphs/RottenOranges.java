@@ -2,6 +2,9 @@ package com.jeyam.dsalgo.graphs;
 
 import java.util.*;
 
+import static com.jeyam.dsalgo.graphs.GraphUtils.getColumnIndexFor4Directions;
+import static com.jeyam.dsalgo.graphs.GraphUtils.getRowIndexFor4Directions;
+
 /**
  * https://takeuforward.org/data-structure/rotten-oranges/
  */
@@ -49,8 +52,8 @@ public class RottenOranges {
             var col = pair.getCol();
             var count = rottenProcessCount = pair.getCount();
 
-            int rI[] = {0, 0, -1, 1};
-            int cI[] = {-1, 1, 0, 0};
+            int rI[] = getRowIndexFor4Directions();
+            int cI[] = getColumnIndexFor4Directions();
 
             for (int x = 0; x < 4; x++) {
                 int cR = row + rI[x];
