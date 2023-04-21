@@ -19,10 +19,10 @@ public class NoOfIslands {
 
     public static void main(String[] args) {
         int islands [][] = {
-                {0, 1, 1, 0},
-                {0, 0, 0, 1},
-                {0, 0, 0, 0},
-                {1, 0, 1, 1},
+            {0, 1, 1, 0},
+            {0, 0, 0, 1},
+            {0, 0, 0, 0},
+            {1, 0, 1, 1},
         };
         boolean visited [][] = new boolean[islands.length][islands[0].length];
 
@@ -34,8 +34,8 @@ public class NoOfIslands {
         int rows = islands.length;
         int cols = islands[0].length;
 
-        for (int i=0; i<4; i++) {
-            for (int j=0; j<4; j++) {
+        for (int i=0; i<islands.length; i++) {
+            for (int j=0; j<islands[i].length; j++) {
                 if (islands[i][j] == 1 && !visited[i][j]) {
                     bfs(i, j, islands, visited, rows, cols);
                     totalIslands++;
