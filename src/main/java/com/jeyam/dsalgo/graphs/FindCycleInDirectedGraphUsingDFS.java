@@ -2,6 +2,9 @@ package com.jeyam.dsalgo.graphs;
 
 import java.util.List;
 
+/**
+ * https://takeuforward.org/data-structure/detect-cycle-in-a-directed-graph-using-dfs-g-19/
+ */
 public class FindCycleInDirectedGraphUsingDFS {
 
     public static void main(String[] args) {
@@ -13,7 +16,7 @@ public class FindCycleInDirectedGraphUsingDFS {
             List.of(0)
         );
 
-        var vertex = adjList.size() ;
+        var vertex = adjList.size();
         boolean visited [] = new boolean[vertex];
         boolean pathVisited[] = new boolean[vertex];
         var result = false;
