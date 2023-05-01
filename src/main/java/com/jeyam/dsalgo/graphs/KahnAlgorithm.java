@@ -3,6 +3,9 @@ package com.jeyam.dsalgo.graphs;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * * https://takeuforward.org/data-structure/kahns-algorithm-topological-sort-algorithm-bfs-g-22/
+ */
 public class KahnAlgorithm {
 
     public static void main(String[] args) {
