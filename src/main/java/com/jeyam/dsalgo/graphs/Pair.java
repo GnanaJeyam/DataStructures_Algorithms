@@ -33,4 +33,12 @@ public class Pair {
     public int hashCode() {
         return Objects.hash(r, c);
     }
+
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "r=" + r +
+                ", c=" + c +
+            '}';
+    }
 }
