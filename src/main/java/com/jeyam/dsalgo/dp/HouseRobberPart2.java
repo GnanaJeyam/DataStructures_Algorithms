@@ -40,6 +40,9 @@ public class HouseRobberPart2 {
         System.out.println("Using Memoization: " + result);
     }
 
+    static String test() throws Exception {
+        throw new Exception();
+    }
     static long robHouse(int n, Integer[] values) {
         if (n == 0) {
             return values[0];
