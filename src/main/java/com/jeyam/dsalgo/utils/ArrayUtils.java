@@ -1,9 +1,15 @@
 package com.jeyam.dsalgo.utils;
 
+import java.util.Arrays;
+
 public final class ArrayUtils {
 
     private ArrayUtils() {
         // No one should create instance
+    }
+
+    public static void print2DArray(int[][] values) {
+        Arrays.stream(values).forEach(ArrayUtils::printArray);
     }
 
     public static void printArray(int[] array) {
