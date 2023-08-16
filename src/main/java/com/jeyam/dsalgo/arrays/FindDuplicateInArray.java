@@ -1,5 +1,8 @@
 package com.jeyam.dsalgo.arrays;
 
+/**
+ * https://takeuforward.org/data-structure/find-the-repeating-and-missing-numbers/
+ */
 public class FindDuplicateInArray {
 
     public static void main(String[] args) {
