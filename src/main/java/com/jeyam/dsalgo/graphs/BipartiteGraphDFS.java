@@ -18,14 +18,11 @@ public class BipartiteGraphDFS {
      */
 
     public static void main(String[] args) {
-        var adjList = new ArrayList<List<Integer>>();
-        adjList.addAll(
-            List.of(
+        var adjList = new ArrayList<>(List.of(
                 List.of(1),
                 List.of(0, 2),
                 List.of(0, 1)
-            )
-        );
+        ));
 
         int vertex = adjList.size();
         int visited[] = new int[vertex+1];

@@ -21,10 +21,10 @@ class ArrayToBst
 	public static void main (String[] args) throws Exception
 	 {
 	    BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.valueOf(b.readLine());
+        int t = Integer.parseInt(b.readLine());
         while(t-- > 0){
-            int n = Integer.valueOf(b.readLine());
-            String s[] = b.readLine().split("\\s");
+            int n = Integer.parseInt(b.readLine());
+            String[] s = b.readLine().split("\\s");
             int a[] = Arrays.stream(s).mapToInt(Integer::parseInt).toArray();
             Tree tree = constructBST(a, 0, n-1);
             preOrder(tree);

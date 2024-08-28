@@ -1,8 +1,6 @@
 package com.jeyam.dsalgo.graphs;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://takeuforward.org/graph/bipartite-graph-bfs-implementation/
@@ -19,9 +17,7 @@ public class BipartiteGraphBFS {
 
     public static void main(String[] args) {
         int vertex = 10;
-        var adjList = new ArrayList<List<Integer>>();
-        adjList.addAll(
-            List.of(
+        var adjList = new ArrayList<List<Integer>>(List.of(
                 List.of(),
                 List.of(2),
                 List.of(1, 3),
@@ -33,9 +29,10 @@ public class BipartiteGraphBFS {
                 List.of(6, 7, 9),
                 List.of(8, 10),
                 List.of(9)
-            ));
+        ));
 
-        int visited[] = new int[vertex+1];
+
+        int[] visited = new int[vertex+1];
         for (int i = 0; i <= vertex; i++) {
             visited[i] = -1;
         }
