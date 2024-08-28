@@ -2,7 +2,8 @@ package com.jeyam.dsalgo.linkedlist;
 
 public class Node<Type> {
     private final Type type;
-    private Node next;
+    private Node<Type> next;
+    private Node<Type> bottom;
 
     Node(Type type) {
         this.type = type;
@@ -12,11 +13,18 @@ public class Node<Type> {
         return type;
     }
 
-    public Node getNext(){
+    public Node<Type> getNext(){
         return next;
     }
 
-    public void setNext(Node<?> next) {
+    public void setNext(Node<Type> next) {
         this.next = next;
+    }
+    public Node<Type> getBottom() {
+        return bottom;
+    }
+
+    public void setBottom(Node<Type> bottom) {
+        this.bottom = bottom;
     }
 }
