@@ -7,7 +7,7 @@ import java.util.HashSet;
  */
 public class LengthOfLongestSubString {
     public static void main(String[] args) {
-        String word = "takeUforward";
+        String word = "takeaUforward";
         char[] words = word.toCharArray();
 
         var set = new HashSet<Character>();
@@ -29,6 +29,6 @@ public class LengthOfLongestSubString {
             }
         }
 
-        System.out.println(max);
+        System.out.println("Length of the Longest unique sub string => " + (max + 1));
     }
 }
