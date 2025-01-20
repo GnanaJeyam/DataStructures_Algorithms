@@ -22,10 +22,10 @@ class ArrayToBst
 	 {
 	    BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(b.readLine());
-        while(t-- > 0){
+        while(t-- > 0) {
             int n = Integer.parseInt(b.readLine());
             String[] s = b.readLine().split("\\s");
-            int a[] = Arrays.stream(s).mapToInt(Integer::parseInt).toArray();
+            int[] a = Arrays.stream(s).mapToInt(Integer::parseInt).toArray();
             Tree tree = constructBST(a, 0, n-1);
             preOrder(tree);
 

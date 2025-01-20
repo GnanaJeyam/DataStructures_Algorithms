@@ -7,7 +7,7 @@ import static com.jeyam.dsalgo.utils.ArrayUtils.printArray;
  */
 public class Sort012 {
     public static void main(String[] args) {
-        int[] array = {2,0,1};
+        int[] array = {2,1,0,1,0,0,1};
         int low = 0, mid = 0, high = array.length-1;
         while (mid <= high) {
             var element = array[mid];

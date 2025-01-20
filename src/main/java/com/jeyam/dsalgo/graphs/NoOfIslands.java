@@ -18,18 +18,18 @@ public class NoOfIslands {
      */
 
     public static void main(String[] args) {
-        int islands [][] = {
+        int[][] islands = {
             {0, 1, 1, 0},
             {0, 0, 0, 1},
             {0, 0, 0, 0},
             {1, 0, 1, 1},
         };
-        boolean visited [][] = new boolean[islands.length][islands[0].length];
+        boolean[][] visited = new boolean[islands.length][islands[0].length];
 
         printTotalIslands(islands, visited);
     }
 
-    static void printTotalIslands(int islands [][], boolean visited [][]) {
+    static void printTotalIslands(int[][] islands, boolean[][] visited) {
         int totalIslands = 0;
         int rows = islands.length;
         int cols = islands[0].length;

@@ -6,6 +6,29 @@ package com.jeyam.dsalgo.string;
 public class CompareVersionNumbers {
 
     public static void main(String[] args) {
+        int[] arr = {4, 5, 6, 7, 10, 0, 1, 2, 3};
+
+        int low = 0;
+        int high = arr.length -1 ;
+        int max = -1;
+        while (low <= high) {
+            int mid = (low + high)/2;
+            if (arr[low] <= arr[high]) {
+                max = Math.max(max, arr[high]);
+                break;
+            }
+
+            if (arr[low] <= arr[mid]) {
+                max = Math.max(max, arr[mid]);
+                low = mid + 1;
+            } else if (arr[mid] <= arr[high]) {
+                max = Math.max(max, arr[high]);
+                high = mid - 1;
+            }
+        }
+
+        System.out.println("MAX " + max);
+
         int result = compareVersion("1.01", "1.001");
         System.out.println("Result " + result);
     }

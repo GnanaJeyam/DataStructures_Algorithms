@@ -45,6 +45,6 @@ public class BFS {
         );
 
         List<Integer> bfs = bfs(adjList, 5);
-        bfs.stream().forEach(System.out::println);
+        bfs.forEach(System.out::println);
     }
 }
